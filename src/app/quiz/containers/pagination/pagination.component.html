@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <!-- <h4 class="card-title">Time Left : </h4> -->
+    <h6 class="card-subtitle mb-2 text-muted">Question Index</h6>
+    <div class="card-text">
+      <app-pagination-view 
+      [questions]="questions$ | async" 
+      [activeIndex]="activeIndex$ | async" 
+      (onSelect)="changeQuestion($event)"
+      >
+      </app-pagination-view>
+    </div>
+  </div>
+</div>

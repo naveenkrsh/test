@@ -1,0 +1,46 @@
+.pagination-page
+{
+    display: table; 
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    padding: 1px;
+}
+.pagination-page > div
+{   
+    /* background-color: grey; */
+   
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.125);
+    display: table-cell;
+    vertical-align: middle;
+}
+.pagination-page > div:hover
+{
+    background-color: rgba(0,0,0,.125);
+}
+
+.pagination-row
+{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.active-question
+{
+    color: #fff;
+    background-color: #28a745;
+}
+
+.pagination-page .active-question:hover
+{
+    color: #fff;
+    background-color: green;
+}
+
+.answered-question
+{
+    color: #fff;
+    background-color: #007bff;
+}

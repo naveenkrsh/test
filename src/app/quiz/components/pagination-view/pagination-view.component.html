@@ -1,0 +1,9 @@
+<div class="pagination-row">
+  <div class="pagination-page " *ngFor="let question of questions;let i=index">
+    <div (click)="select(i)" [ngClass]="getBoxCssClass(i)">
+      <div>
+        {{i+1}}
+      </div>
+    </div>
+  </div>
+</div>
